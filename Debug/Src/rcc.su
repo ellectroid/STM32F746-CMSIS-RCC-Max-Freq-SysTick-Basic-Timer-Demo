@@ -1,0 +1,9 @@
+rcc.c:15:6:rcc_setup	8	static
+rcc.c:25:6:rcc_bsctmr6	4	static
+rcc.c:29:6:rcc_usart1	4	static
+rcc.c:35:6:rcc_gpio_porta	4	static
+rcc.c:39:6:rcc_gpio_portb	4	static
+rcc.c:43:6:rcc_gpio_porti	4	static
+rcc.c:46:6:rcc_dma1	4	static
+rcc.c:49:6:rcc_dma2	4	static
+rcc.c:52:6:rcc_init	16	static
