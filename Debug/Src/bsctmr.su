@@ -2,5 +2,5 @@ core_cm7.h:1896:22:__NVIC_EnableIRQ	16	static
 core_cm7.h:1985:22:__NVIC_ClearPendingIRQ	16	static
 core_cm7.h:2024:22:__NVIC_SetPriority	16	static
 bsctmr.c:3:6:basic_timer_setup	16	static
-bsctmr.c:23:6:basic_timer_start	16	static
-bsctmr.c:28:6:TIM6_DAC_IRQHandler	8	static
+bsctmr.c:14:6:basic_timer_start	16	static
+bsctmr.c:32:6:TIM6_DAC_IRQHandler	8	static
