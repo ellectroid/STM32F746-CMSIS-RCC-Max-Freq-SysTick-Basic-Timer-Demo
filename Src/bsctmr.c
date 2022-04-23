@@ -12,8 +12,8 @@ void basic_timer_setup(TIM_TypeDef *TMR) {
 }
 
 void basic_timer_start(TIM_TypeDef *TMR) {
-	TMR->EGR = TIM_EGR_UG; //force register update via force update event
-	//TMR->SR &= ~TIM_SR_UIF; //clear update event; don't need because TIM_CR1_URS
+	TMR->EGR = TIM_EGR_UG; //force buffered register update via force update event
+	TMR->SR &= ~TIM_SR_UIF; //clear update event
 	if (TMR == TIM6) {
 		NVIC_SetPriority(TIM6_DAC_IRQn, 1U);
 		NVIC_ClearPendingIRQ(TIM6_DAC_IRQn);
@@ -31,6 +31,5 @@ void basic_timer_start(TIM_TypeDef *TMR) {
 
 void TIM6_DAC_IRQHandler(void) {
 	TIM6->SR &= ~TIM_SR_UIF; //clear update event interrupt flag in timer peripheral
-	NVIC_ClearPendingIRQ(TIM6_DAC_IRQn); //clear interrupt pending flag in NVIC
 	toggle_led1();
 }
