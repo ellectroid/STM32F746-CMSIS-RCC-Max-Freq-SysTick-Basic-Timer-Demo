@@ -1,5 +1,5 @@
 # STM32F746-RCC-Max-Freq-SysTick-Basic-Timer-Demo
-Basic demo of setting up max overdrive freuency for MCU, using SysTick to make delay, using basic timer with interrupts
+Basic demo of setting up max overdrive frequency for MCU, using SysTick to make delay, using basic timer with interrupts
 
 Clock: 216MHz; 25MHz external oscillator with PLL.<br>
 LED on PI1.<br><br>
