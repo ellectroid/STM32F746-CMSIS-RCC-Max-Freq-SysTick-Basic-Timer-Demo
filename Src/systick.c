@@ -1,6 +1,6 @@
 #include "systick.h"
 
-volatile uint32_t SYSTEM_MS; //46 days
+volatile static uint32_t SYSTEM_MS; //46 days
 
 void systick_setup(uint32_t sys_freq) {
 	SysTick->LOAD = (sys_freq / 1000U) - 1U; //1ms tick
